@@ -1,7 +1,7 @@
 pull_request_rules:
-  - name: auto merge when approved
+  - name: instant test comment
     conditions:
-      - "#approved-reviews-by>=1"
+      - base=main
     actions:
-      merge:
-        method: merge
+      comment:
+        message: "Mergify respondeu 👍 está funcionando"

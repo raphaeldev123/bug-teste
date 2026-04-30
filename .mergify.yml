@@ -1,7 +1,7 @@
+
 pull_request_rules:
-  - name: auto merge when approved
-    conditions:
-      - "#approved-reviews-by>=1"
+  - name: force test
+    conditions: []
     actions:
-      merge:
-        method: merge
+      comment:
+        message: "Mergify respondeu 👍"
